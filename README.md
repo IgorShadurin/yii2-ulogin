@@ -43,7 +43,7 @@ echo ULogin::widget([
     'hidden' => [],
 
     // where to should ULogin redirect users after successful login
-    'redirectUri' => ['sign/ulogin'],
+    'redirectUri' => ['sign/ulogin-auth'],
 
     // optional params (can be ommited)
     // force widget language (autodetect by default)
@@ -67,7 +67,7 @@ use rmrevin\yii\ulogin\AuthAction;
 class SiteController extends Controller
 {
 
-    public function action()
+    public function actions()
     {
         return [
             // ...
